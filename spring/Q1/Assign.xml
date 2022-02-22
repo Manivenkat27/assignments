@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean id="address" class="assignmentSpring.Address"  >
+<constructor-arg value="dighi"/>
+<constructor-arg value="pune"/>
+<constructor-arg value="maharashtra"/>
+<constructor-arg value="411001" type="int"/>
+<constructor-arg value="india"/>
+<!--  <property name="street" value="dighi"></property>
+<property name="city" value="pune"></property>
+<property name="state" value="maharashtra"></property>
+<property name="zip" value="411001"></property>
+<property name="country" value="india"></property>-->
+</bean>
+<bean id="customer" class="assignmentSpring.Customer">
+<constructor-arg value="101"  />
+<constructor-arg value="Sanket"  />
+<constructor-arg value="9191"  />
+<constructor-arg ref="address"  />
+
+
+<!--  <property name="customerId" value="101"></property>
+<property name="customerName" value="Sanket"></property>
+<property name="customerContact" value="9191"></property>
+<property name="customerAddress" ref="address"></property>-->
+</bean>
+                
+                </beans>
